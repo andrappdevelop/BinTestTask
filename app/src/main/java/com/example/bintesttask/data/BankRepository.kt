@@ -27,9 +27,3 @@ interface BankRepository {
     }
 }
 
-sealed class DataResult {
-
-    data class Success(val cloud: BinCloud) : DataResult()
-
-    data class Error(val message: String) : DataResult()
-}
